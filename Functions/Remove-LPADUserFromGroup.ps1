@@ -1,6 +1,6 @@
 Function Remove-LPADUserFromGroup
 {
-#region help
+
 <#
 	.SYNOPSIS
 		This will remove a user from one of the groups the user is a member of.
@@ -26,7 +26,7 @@ Function Remove-LPADUserFromGroup
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
+
 	[CmdletBinding()]
 	Param
 	(

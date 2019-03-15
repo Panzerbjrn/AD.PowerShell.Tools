@@ -1,6 +1,6 @@
 Function Add-LPAddADGroupMember
 {
-#region help
+
 <#
 	.SYNOPSIS
 		This script aids in adding a user to a group
@@ -22,8 +22,8 @@ Function Add-LPAddADGroupMember
 
 	.NOTES
 		Version:			1.1
-		Author: 			Lars PanzerbjÃ¸rn
-		Contact:		lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Author:				Lars Panzerbjørn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
 		Creation Date:		2018.11.01
 		Purpose/Change:		Initial script development
 		Change 2019.03.14:	Pre-fixed Function
@@ -37,7 +37,7 @@ Function Add-LPAddADGroupMember
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
+
 	[CmdletBinding()]
 	Param
 	(

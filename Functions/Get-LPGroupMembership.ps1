@@ -1,6 +1,6 @@
 Function Get-LPGroupMembership
 {
-#region help
+
 <#
 	.SYNOPSIS
 		This script will get the members, and recursive members 1 level down for an AD group.
@@ -22,7 +22,7 @@ Function Get-LPGroupMembership
 
 	.NOTES
 		Version:		1.0
-		Author:			Lars PanzerbjÃ¸rn
+		Author:			Lars Panzerbjørn
 		Contact:		lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
 		Creation Date:	2018.05.30
 		Purpose/Change: Report on Group memberships
@@ -33,7 +33,7 @@ Function Get-LPGroupMembership
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
+
 	[CmdletBinding()]
 	Param
 	(

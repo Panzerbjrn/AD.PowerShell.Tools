@@ -19,20 +19,21 @@
 
 #Requires -Version 4.0
 
-[CmdletBinding(PositionalBinding=False)]
+[cmdletbinding()]
 param()
 
 Write-Verbose $PSScriptRoot
 
-#Get Functions and Helpers function definition files.
-$Functions	= @( Get-ChildItem -Path $PSScriptRoot\Functions\*.ps1 -ErrorAction SilentlyContinue )
-$Helpers = @( Get-ChildItem -Path $PSScriptRoot\Helpers\*.ps1 -ErrorAction SilentlyContinue )
+#Get public and private function definition files.
+$Functions  = @( Get-ChildItem -Path $PSScriptRoot\Functions\*.ps1 -ErrorAction SilentlyContinue )
+$Helpers = @( Get-ChildItem -Path $PSScriptRoot\Internal\*.ps1 -ErrorAction SilentlyContinue )
 
 #Dot source the files
-ForEach ($Import in @($Functions + $Helpers))
+Foreach ($Import in @($Functions + $Helpers))
 {
 	Try
 	{
+		Write-Verbose "Processing $($Import.Fullname)"
 		. $Import.Fullname
 	}
 	Catch
@@ -42,4 +43,3 @@ ForEach ($Import in @($Functions + $Helpers))
 }
 
 Export-ModuleMember -Function $Functions.Basename
-

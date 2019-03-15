@@ -1,6 +1,5 @@
 Function Start-LPADReplication
 {
-#region help
 <#
 	.SYNOPSIS
 		This will start AD Replication
@@ -8,9 +7,15 @@ Function Start-LPADReplication
 	.DESCRIPTION
 		This will start AD Replication
 
+	.INPUTS
+		None
+
+	.OUTPUTS
+		None
+
 	.NOTES
 		Version:			1.0
-		Author:				Lars PanzerbjÃ¸rn
+		Author:				Lars Panzerbjørn
 		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
 		Creation Date:		2017.02.01
 		Purpose/Change: 	Initial script development
@@ -21,6 +26,5 @@ Function Start-LPADReplication
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
 	Get-ADDomainController -Filter * | Select Name | ForEach {Repadmin /syncall $_.Name /APed}
 }

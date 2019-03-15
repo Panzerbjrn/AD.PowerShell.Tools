@@ -1,6 +1,6 @@
 Function Reset-LPADUserPassword
 {
-#region help
+
 <#
 	.SYNOPSIS
 		This will reset a user's password and unlock the account.
@@ -37,7 +37,7 @@ Function Reset-LPADUserPassword
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
+
 	[CmdletBinding()]
 	Param
 	(

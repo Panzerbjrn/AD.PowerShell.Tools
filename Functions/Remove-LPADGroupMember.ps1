@@ -1,6 +1,6 @@
 Function Remove-LPADGroupMember
 {
-#region help
+
 <#
 	.SYNOPSIS
 		Removes a member from a selected group.
@@ -19,7 +19,7 @@ Function Remove-LPADGroupMember
 
 	.NOTES
 		Version:			1.1
-		Author:				Lars PanzerbjÃ¸rn
+		Author:				Lars Panzerbjørn
 		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
 		Creation Date:		2019.02.01
 		Purpose/Change: 	Initial script development
@@ -31,7 +31,7 @@ Function Remove-LPADGroupMember
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
+
 	[CmdletBinding()]
 	Param
 	(

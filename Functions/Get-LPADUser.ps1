@@ -1,6 +1,6 @@
 Function Get-LPADUser
 {
-#region help
+
 <#
 	.SYNOPSIS
 		This script aids in finding a user and displays basic information
@@ -34,7 +34,7 @@ Function Get-LPADUser
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-#endregion help
+
 	[CmdletBinding()]
 	Param
 	(
