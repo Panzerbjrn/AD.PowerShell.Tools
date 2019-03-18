@@ -1,7 +1,69 @@
 Function Get-LPADGroup
 {
-[CmdletBinding()]
-Param([Parameter(Mandatory=$True,ValueFrompipeline=$True)][string]$Group)
+<#
+	.SYNOPSIS
+		This script aids in finding a Group and displays basic information
+
+	.DESCRIPTION
+		This script aids in finding a Group and displays basic information
+
+	.PARAMETER Group
+		This should be the display name or SamAccountName of a Group
+
+	.INPUTS
+		None
+
+	.OUTPUTS
+		This outputs basic information from AD
+
+	.NOTES
+		Version:			1.0
+		Author:				Lars Panzerbjørn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPanzerbjørn
+		Creation Date:		2018.11.01
+		Purpose/Change:		Initial script development
+		Change 2019.03.14:	Pre-fixed Function
+		Change 2019.03.18:	Pre-fixed Function
+		
+	.EXAMPLE
+		Get-LPADGroup -Group *Mongo*
+	
+	.EXAMPLE
+		Get-LPADGroup -Group *Mongo*
+		1. DEL-MongoDBAdmin, DEL-MongoDBAdmin
+		2. IT Alerts MongoDB, IT Alerts MongoDB
+		3. MONGO-DBAAdmins, MONGO-DBAAdmins
+		4. MONGO-Infrastructure, MONGO-Infrastructure
+		5. MONGO-ReadOnly, MONGO-ReadOnly
+		6. MONGO-OPS-Admins, MONGO-OPS-Admins
+		7. MONGO-OPS-ReadOnly, MONGO-OPS-ReadOnly
+		Enter Selection: 7
+
+
+		SamAccountName             : MONGO-OPS-ReadOnly
+		Name                       : MONGO-OPS-ReadOnly
+		Department                 :
+		Description                :
+		Title                      :
+		Manager                    :
+		Office                     : {}
+		PhysicalDeliveryOfficeName :
+		Enabled                    :
+		LockedOut                  : {}
+		AccountExpirationDate      : {}
+		DistinguishedName          : CN=MONGO-OPS-ReadOnly,OU=All Applications,OU=DEV,OU=Applications,DC=CentralIndustrial,DC=intra
+		CanonicalName              : CentralIndustrial.intra/Applications/DEV/All Applications/MONGO-OPS-ReadOnly
+		GroupScope                 : Global
+		GroupCategory              : Security
+
+
+	.LINK
+		https://github.com/Panzerbjrn/ADtoolsModule
+#>
+	[CmdletBinding()]
+	Param(
+		[Parameter(Mandatory=$True,ValueFrompipeline=$True)][string]$Group
+	)
 	IF (Get-ADGroup -Filter {NAME -like $Group})
 	{
 		$GRP = Get-ADGroup -Filter {NAME -like $Group} -Properties *

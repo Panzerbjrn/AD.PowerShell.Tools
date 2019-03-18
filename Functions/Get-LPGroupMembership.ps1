@@ -28,12 +28,11 @@ Function Get-LPGroupMembership
 		Purpose/Change: Report on Group memberships
 		
 	.EXAMPLE
-		Get-GroupMembership -Group "LondonExchAdmins" -Path \\Files\Sher01\Powershell\LonExch.csv
+		Get-GroupMembership -Group "LondonExchAdmins" -Path \\Files\Share01\Powershell\LonExch.csv
 
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-
 	[CmdletBinding()]
 	Param
 	(
@@ -50,7 +49,7 @@ Function Get-LPGroupMembership
 		IF ($Member.ObjectClass -eq "Group"){
 			$CatchMembers = Get-ADGroupMember $Member -ErrorAction Stop
 			ForEach ($Member in $CatchMembers){
-				IF ($Member.ObjectClass -eq "Group"){Write-Verbose "Too Many Nests"}
+				IF ($Member.ObjectClass -eq "Group"){Write-Error "Too Many Nests"}
 				ELSE {
 					$ADUser = Get-ADUser $Member -Properties * -ErrorAction SilentlyContinue
 					$ADUserDisplayName = $ADUser.DisplayName

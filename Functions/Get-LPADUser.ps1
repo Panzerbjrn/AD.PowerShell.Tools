@@ -1,6 +1,5 @@
 Function Get-LPADUser
 {
-
 <#
 	.SYNOPSIS
 		This script aids in finding a user and displays basic information
@@ -20,7 +19,7 @@ Function Get-LPADUser
 	.NOTES
 		Version:			1.0
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPanzerbjørn
 		Creation Date:		2018.11.01
 		Purpose/Change:		Initial script development
 		Change 2019.03.14:	Pre-fixed Function
@@ -29,12 +28,32 @@ Function Get-LPADUser
 		Get-LPADUser -User Panzerbjørn*
 	
 	.EXAMPLE
-		Get-LPADUser -User *Panzerbjørn*
+		Get-LPADUser -User *Panzer*
+		1. Marie Panzer, mPanzer
+		2. lPanzerb, lPanzerb
+		3. Lars Panzerbjørn ADM, lPanzerb_admin
+		Enter Selection: 3
+
+
+		SamAccountName             : lPanzerb_admin
+		Name                       : Lars Panzerbjørn ADM
+		Department                 :
+		Description                :
+		Title                      :
+		Manager                    :
+		Office                     :
+		PhysicalDeliveryOfficeName :
+		Enabled                    : True
+		LockedOut                  : False
+		PasswordNeverExpires       : False
+		AccountExpirationDate      :
+		DistinguishedName          : CN=Lars Panzerbjørn ADM,OU=Admins,DC=CentralIndustrial,DC=intra
+		CanonicalName              : CentralIndustrial.intra/Admins/Lars Panzerbjørn ADM
+
 
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-
 	[CmdletBinding()]
 	Param
 	(

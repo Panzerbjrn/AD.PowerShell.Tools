@@ -1,6 +1,5 @@
 Function Remove-LPADGroupMember
 {
-
 <#
 	.SYNOPSIS
 		Removes a member from a selected group.
@@ -26,7 +25,11 @@ Function Remove-LPADGroupMember
 		Update: 2019.02.03:	Updated function to include a help section and examples.
 		
 	.EXAMPLE
-		Remove-LPADGroupMember -GroupName "Stale - Local Server Administrators - DU-SCCM-DP02"	
+		Remove-LPADGroupMember -GroupName "Domain Admin"
+		
+		1. mPanzer_adm
+		2. LPanzer_adm
+		Enter selection: 2
 
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule

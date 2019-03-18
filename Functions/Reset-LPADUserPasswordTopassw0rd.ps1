@@ -1,6 +1,5 @@
 Function Reset-LPADUserPasswordTopassw0rd
 {
-
 <#
 	.SYNOPSIS
 		This will reset a user's password to Passw0rd and unlock the account.

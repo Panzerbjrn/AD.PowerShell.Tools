@@ -1,5 +1,55 @@
 Function Get-LPADComputer
 {
+<#
+	.SYNOPSIS
+		This script aids in finding a Computer and displays basic information
+
+	.DESCRIPTION
+		This script aids in finding a Computer and displays basic information
+
+	.PARAMETER Computer
+		This should be the name or SamAccountName of a Computer
+
+	.INPUTS
+		None
+
+	.OUTPUTS
+		This outputs basic information from AD
+
+	.NOTES
+		Version:			1.0
+		Author:				Lars Panzerbjørn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPanzerbjørn
+		Creation Date:		2018.11.01
+		Purpose/Change:		Initial script development
+		Change 2019.03.14:	Pre-fixed Function
+		
+	.EXAMPLE
+		Get-LPADComputer -Computer Panzerbjørn*
+	
+	.EXAMPLE
+		Get-LPADComputer -Computer mon0*
+		1. MON01UK, MON01UK.CentralIndustrial.intra
+		2. MON01LON, MON01LON.CentralIndustrial.intra
+		Enter Selection: 1
+
+
+		Name                       : MON01UK
+		DNSHostName                : MON01UK.CentralIndustrial.intra
+		DistinguishedName          : CN=MON01UK,OU=Severity 1,OU=Applications,OU=Servers,OU=Infrastructure,DC=CentralIndustrial,DC=intra
+		CanonicalName              : CentralIndustrial.intra/Infrastructure/Servers/Applications/Severity 1/MON01UK
+		Description                : Network Monitoring Server
+		Enabled                    : True
+		IPv4Address                :
+		LockedOut                  : False
+		OperatingSystem            : Windows Server 2012
+		OperatingSystemServicePack : Service Pack 2
+		OperatingSystemVersion     : 6.2 (3790)
+		whenCreated                : 04/04/2014 10:31:38
+
+	.LINK
+		https://github.com/Panzerbjrn/ADtoolsModule
+#>
 	[CmdletBinding()]
 	Param(
 		[parameter(Mandatory=$true,ValueFrompipeline=$True)][Alias("Host","CN","MachineName","ComputerName")][String]$Computer
