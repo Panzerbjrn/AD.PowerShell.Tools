@@ -19,10 +19,11 @@ Function Remove-LPADGroupMember
 	.NOTES
 		Version:			1.1
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2019.02.01
 		Purpose/Change: 	Initial script development
 		Update: 2019.02.03:	Updated function to include a help section and examples.
+		Change 2019.03.14:	Pre-fixed Function
 		
 	.EXAMPLE
 		Remove-LPADGroupMember -GroupName "Domain Admin"
@@ -34,7 +35,6 @@ Function Remove-LPADGroupMember
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-
 	[CmdletBinding()]
 	Param
 	(

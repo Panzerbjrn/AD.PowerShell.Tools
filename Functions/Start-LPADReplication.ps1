@@ -16,7 +16,7 @@ Function Start-LPADReplication
 	.NOTES
 		Version:			1.0
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2017.02.01
 		Purpose/Change: 	Initial script development
 		

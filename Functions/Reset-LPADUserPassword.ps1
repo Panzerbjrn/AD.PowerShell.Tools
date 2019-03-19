@@ -1,6 +1,5 @@
 Function Reset-LPADUserPassword
 {
-
 <#
 	.SYNOPSIS
 		This will reset a user's password and unlock the account.
@@ -20,9 +19,10 @@ Function Reset-LPADUserPassword
 	.NOTES
 		Version:			1.0
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2018.05.01
 		Purpose/Change: 	Initial script development
+		Change 2019.03.14:	Pre-fixed Function
 		
 	.EXAMPLE
 		Reset-LPADUserPassword -User LPanzerbjørn -Password "P4$$vv0rd!"
@@ -37,7 +37,6 @@ Function Reset-LPADUserPassword
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-
 	[CmdletBinding()]
 	Param
 	(

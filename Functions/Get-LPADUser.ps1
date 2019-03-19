@@ -19,7 +19,7 @@ Function Get-LPADUser
 	.NOTES
 		Version:			1.0
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPanzerbjørn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2018.11.01
 		Purpose/Change:		Initial script development
 		Change 2019.03.14:	Pre-fixed Function

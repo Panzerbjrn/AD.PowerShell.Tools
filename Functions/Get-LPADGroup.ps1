@@ -18,12 +18,11 @@ Function Get-LPADGroup
 
 	.NOTES
 		Version:			1.0
-		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPanzerbjørn
+		Author:				Lars Panzerbj�rn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2018.11.01
 		Purpose/Change:		Initial script development
 		Change 2019.03.14:	Pre-fixed Function
-		Change 2019.03.18:	Pre-fixed Function
 		
 	.EXAMPLE
 		Get-LPADGroup -Group *Mongo*

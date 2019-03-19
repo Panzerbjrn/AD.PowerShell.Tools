@@ -1,6 +1,5 @@
 Function Get-LPGroupMembership
 {
-
 <#
 	.SYNOPSIS
 		This script will get the members, and recursive members 1 level down for an AD group.
@@ -21,11 +20,12 @@ Function Get-LPGroupMembership
 		This command exports to CSV, to the location specified in $Path
 
 	.NOTES
-		Version:		1.0
-		Author:			Lars Panzerbjørn
-		Contact:		lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
-		Creation Date:	2018.05.30
-		Purpose/Change: Report on Group memberships
+		Version:			1.0
+		Author:				Lars Panzerbjørn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
+		Creation Date:		2018.05.30
+		Purpose/Change: 	Report on Group memberships
+		Change 2019.03.14:	Pre-fixed Function
 		
 	.EXAMPLE
 		Get-GroupMembership -Group "LondonExchAdmins" -Path \\Files\Share01\Powershell\LonExch.csv

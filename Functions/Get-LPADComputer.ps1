@@ -19,7 +19,7 @@ Function Get-LPADComputer
 	.NOTES
 		Version:			1.0
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPanzerbjørn
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2018.11.01
 		Purpose/Change:		Initial script development
 		Change 2019.03.14:	Pre-fixed Function
@@ -52,7 +52,7 @@ Function Get-LPADComputer
 #>
 	[CmdletBinding()]
 	Param(
-		[parameter(Mandatory=$true,ValueFrompipeline=$True)][Alias("Host","CN","MachineName","ComputerName")][String]$Computer
+		[parameter(Mandatory=$True,ValueFrompipeline=$True)][Alias("Host","CN","MachineName","ComputerName")][String]$Computer
 	)
 	IF (Get-ADComputer -Filter {Name -like $Computer})
 	{

@@ -13,9 +13,10 @@ Function Reset-LPADUserPasswordTopassw0rd
 	.NOTES
 		Version:			1.0
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2018.05.01
 		Purpose/Change: 	Initial script development
+		Change 2019.03.14:	Pre-fixed Function
 		
 	.EXAMPLE
 		Reset-LPADUserPasswordTopassw0rd -User LPanzerbjørn
@@ -33,7 +34,6 @@ Function Reset-LPADUserPasswordTopassw0rd
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-
 	[CmdletBinding()]
 	Param
 	(

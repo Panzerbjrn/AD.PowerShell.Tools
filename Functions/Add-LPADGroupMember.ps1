@@ -1,6 +1,5 @@
 Function Add-LPAddADGroupMember
 {
-
 <#
 	.SYNOPSIS
 		This script aids in adding a user to a group
@@ -23,21 +22,20 @@ Function Add-LPAddADGroupMember
 	.NOTES
 		Version:			1.1
 		Author:				Lars Panzerbjørn
-		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: LPetersson
+		Contact:			lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: Panzerbjrn
 		Creation Date:		2018.11.01
 		Purpose/Change:		Initial script development
 		Change 2019.03.14:	Pre-fixed Function
 		
 	.EXAMPLE
-		Add-LPADGroupMember	 -Group "Local Server Administrators - PROD841*" -User Panzerb*
+		Add-LPAddADGroupMember -Group "Local Administrators*" -User Panzerb*
 	
 	.EXAMPLE
-		Add-LPADGroupMember	 -Group "Local Server Administrators - PROD841*" -User LPanzerb*
+		Add-LPAddADGroupMember -Group "Local Administrators*" -User LPanzerb*
 
 	.LINK
 		https://github.com/Panzerbjrn/ADtoolsModule
 #>
-
 	[CmdletBinding()]
 	Param
 	(
