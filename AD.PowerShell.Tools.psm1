@@ -1,10 +1,9 @@
-#region Script Header
+ï»¿#region Script Header
 #	Thought for the day: The more renowned woman often has fewer rings. - Viking saying
 #	NAME: ADToolsModule.psm1
-#	AUTHOR: Lars Panzerbjørn
-#	CONTACT: lars@panzerbjrn.eu / GitHub: Panzerbjrn / Twitter: lpetersson
+#	AUTHOR: Lars PanzerbjÃ¸rn
+#	CONTACT: GitHub: Panzerbjrn / Twitter: Panzerbjrn
 #	DATE: 2019.03.13
-#	VERSION: 0.1 - 2019.03.13 - Module Created with Create-NewModuleStructure by Lars Panzerbjørn
 #
 #	SYNOPSIS:
 #	#	Basic but useful tools for Server, Desktop and Helldesk teams.
