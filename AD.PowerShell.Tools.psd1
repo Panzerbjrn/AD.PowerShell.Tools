@@ -45,7 +45,7 @@
 		PSData = @{
 
 			# Tags applied to this module. These help with module discovery in online galleries.
-			Tags = @("Active Directory","AD","Helpdesk Tools","Desktop Tools")
+			Tags = @("Active Directory","AD","Helpdesk Tools","Desktop Tools",'Panzerbjrn')
 
 			# A URL to the license for this module.
 			# LicenseUri = ''
