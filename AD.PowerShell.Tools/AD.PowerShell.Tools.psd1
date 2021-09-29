@@ -11,7 +11,7 @@
 	RootModule = 'AD.PowerShell.Tools.psm1'
 
 	# Version number of this module.
-	ModuleVersion = '2.0.1'
+	ModuleVersion = '2.0.2'
 
 	# ID used to uniquely identify this module
 	GUID = 'a3056d26-dff5-439d-a44b-2b2fbcbf4400'
